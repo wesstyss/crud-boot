@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Users</title>
+</head>
+<body>
+<h1>User</h1>
+<table border="1">
+    <td th:utext="${user.userId}">UserId</td>
+    <td th:utext="${user.name}">Name</td>
+    <td th:utext="${user.surname}">Surn
+    <td th:utext="${user.age}">Age</td>
+</table>
+<br>
+<button class="buttonLogout" onclick="window.location.href = '/logout';">Logout</button>
+</body>
+</html>
